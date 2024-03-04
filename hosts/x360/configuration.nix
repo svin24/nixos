@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/office.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
       ../../modules/java.nix
