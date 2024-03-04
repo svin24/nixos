@@ -19,8 +19,6 @@
     psmisc
     # programming
     zig
-    gcc
-    cmake
     rustc
     cargo
     go
