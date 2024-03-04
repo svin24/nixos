@@ -13,6 +13,7 @@
       ../../modules/syspkg.nix
       ../../modules/java.nix
       ../../modules/games.nix
+      ../../modules/virtualbox.nix
       inputs.home-manager.nixosModules.default
     ];
 
