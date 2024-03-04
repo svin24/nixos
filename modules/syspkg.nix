@@ -19,7 +19,7 @@
     psmisc
     # programming
     zig
-    rustc
+    rustup
     cargo
     go
     gopls
