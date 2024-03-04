@@ -16,6 +16,7 @@
     ffmpeg
     yt-dlp
     krita
+    psmisc
     # Go
     go
     gopls
