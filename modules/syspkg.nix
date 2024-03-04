@@ -17,7 +17,12 @@
     yt-dlp
     krita
     psmisc
-    # Go
+    # programming
+    zig
+    gcc
+    ld
+    rustc
+    cargo
     go
     gopls
   ];
