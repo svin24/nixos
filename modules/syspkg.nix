@@ -15,6 +15,7 @@
     haruna
     ffmpeg
     yt-dlp
+    krita
     # Go
     go
     gopls
