@@ -68,7 +68,7 @@
   #
   home.sessionVariables = {
     EDITOR = "nvim";
-    GOPATH = "$HOME/.go"
+    GOPATH = "$HOME/.go";
   };
 
   # Let Home Manager install and manage itself.
