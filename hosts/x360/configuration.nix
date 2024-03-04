@@ -104,7 +104,7 @@
   users.users.john = {
     isNormalUser = true;
     description = "John Iliopoulos";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" "input" "vboxusers" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" "input"];
     packages = with pkgs; [
     ];
   };
