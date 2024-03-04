@@ -20,7 +20,7 @@
     # programming
     zig
     gcc
-    make
+    cmake
     rustc
     cargo
     go
