@@ -9,6 +9,8 @@
     qbittorrent
     backintime
     firefox
+    brave
+    direnv
     vscode-fhs
     haruna
     ffmpeg
