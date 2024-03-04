@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     prismlauncher
     bottles
-    yuzu-early-access
     pcsx2
     #ryujinx #installs a bunch of crap so don't bother use nix-ld
   ];
