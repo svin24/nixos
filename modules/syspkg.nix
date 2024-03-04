@@ -20,7 +20,7 @@
     # programming
     zig
     gcc
-    ld
+    make
     rustc
     cargo
     go
