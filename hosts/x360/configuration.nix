@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/kde.nix
       ../../modules/office.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
@@ -55,9 +56,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
+  
   # services.flatpak.enable = true;
   # Configure keymap in X11
   services.xserver = {
