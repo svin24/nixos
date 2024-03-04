@@ -55,8 +55,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
-  
+ 
   # services.flatpak.enable = true;
   # Configure keymap in X11
   services.xserver = {
@@ -137,6 +136,9 @@
   }];
   # List services that you want to enable:
 
+  environment.systemPackages = [
+    pkgs.home-manager
+  ];
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
