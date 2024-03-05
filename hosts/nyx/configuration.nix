@@ -7,6 +7,7 @@
       ../../modules/kde.nix
       #../../modules/gnome.nix
       #../../modules/office.nix
+      ../../modules/podman.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
       #../../modules/java.nix
