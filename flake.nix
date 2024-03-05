@@ -29,7 +29,7 @@
       homeConfurations = {
         john = home-manager.lib.homeManagerConfiguration{
           inherit pkgs;
-          moodules = [ ./john/home.nix ]
+          moodules = [ ./john/home.nix ];
         };
       };
       
