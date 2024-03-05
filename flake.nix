@@ -27,14 +27,6 @@
         };
       };
 
-      # home manager
-      #homeConfigurations = {
-      #  john = home-manager.lib.homeManagerConfiguration{
-      #    inherit pkgs;
-      #    modules = [ ./john/home.nix ];
-      #  };
-      #};
-      
       # add other devices here
     };
 }

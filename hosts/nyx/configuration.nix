@@ -1,4 +1,3 @@
-#{ config, pkgs, inputs, ... }:
 { config, pkgs, inputs ,... }:
 
 {
@@ -106,10 +105,6 @@
       "john" = import ./home.nix;
    };
   };
-
-  #environment.systemPackages = [
-  #  pkgs.home-manager
-  #];
 
   environment.shellAliases = {
   	vim = "nvim";
