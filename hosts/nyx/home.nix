@@ -76,7 +76,6 @@
     nixf = "nix flakes update $HOME/nixos";
   };
   programs.bash.sessionVariables= {
-    GOROOT = "$HOME/.go";
     GOPATH = "$HOME/.go";
   };
 
