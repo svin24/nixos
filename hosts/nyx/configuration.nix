@@ -8,7 +8,7 @@
       ../../modules/office.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
-      ../../modules/java.nix
+      #../../modules/java.nix
       ../../modules/games.nix
       ../../modules/virt-manager.nix
       #../../modules/virtualbox.nix
