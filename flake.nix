@@ -26,7 +26,7 @@
       };
 
       # home manager
-      homeConfurations = {
+      homeConfigurations = {
         john = home-manager.lib.homeManagerConfiguration{
           inherit pkgs;
           moodules = [ ./john/home.nix ];
