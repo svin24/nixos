@@ -142,7 +142,23 @@
       }
     ];
   }];
-  
+
+  # AUTO UPDATES
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L" # print build logs
+    ];
+    dates = "daily";
+    randomizedDelaySec = "45min";
+  }; 
+  # AUTO CLEANUP
+  nix.optimise.automatic = true;
+  nix.optimise.dates = [ "weekly" ];
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
