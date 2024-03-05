@@ -77,6 +77,7 @@
   };
   programs.bash.sessionVariables= {
     GOROOT = "$HOME/.go";
+    GOPATH = "$HOME/.go";
   };
 
   # Let Home Manager install and manage itself.
