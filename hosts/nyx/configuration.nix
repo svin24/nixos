@@ -129,7 +129,7 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
+  # $programs.gnupg.agent = {
   #   enable = true;
   #   enableSSHSupport = true;
   # };
@@ -160,11 +160,11 @@
   nix.optimise.dates = [ "weekly" ];
 
   #GPG
-  programs.gnupg.agent = {
-  enable = true;
-  enableSSHSupport = true;
-  pinentryFlavor="qt";
-  };
+  #programs.gnupg.agent = {
+  #enable = true;
+  #enableSSHSupport = true;
+  #pinentryFlavor="qt";
+  #};
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
