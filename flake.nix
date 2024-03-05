@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }:#@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -19,11 +19,17 @@
       #x360
       nixosConfigurations = {
         x360 = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          modules = [ 
-            ./hosts/x360/configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
+          #specialArgs = {inherit inputs;};
+          inherit system;
+          modules = [ ./hosts/x360/configuration.nix ];
+        };
+      };
+
+      # home manager
+      homeConfurations = {
+        john = home-manager.lib.homeManagerConfiguration{
+          inherit pkgs;
+          moodules = [ ./john/home.nix ]
         };
       };
       
