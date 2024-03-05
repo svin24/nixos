@@ -64,14 +64,21 @@
   #  /etc/profiles/per-user/john/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nvim";
+    #EDITOR = "nvim";
   };
 
   programs.bash.enable = true;
   programs.bash.shellAliases = {
     ll = "ls -l";
     vim = "nvim";
+    nixt = "sudo nixos-rebuild test --flake $HOME/nixos/";
+    nixs = "sudo nixos-rebuild switch --flake $HOME/nixos/";
+    nixf = "nix flakes update $HOME/nixos";
   };
+  programs.bash.sessionVariables= {
+    GOROOT = "$HOME/.go";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
