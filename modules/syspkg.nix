@@ -10,6 +10,7 @@
     htop
     direnv
     toybox
+    busybox
 
     #Graphical
     qbittorrent

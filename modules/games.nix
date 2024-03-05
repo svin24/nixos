@@ -5,7 +5,7 @@
     prismlauncher
     bottles
     pcsx2
-    cemu
+    #cemu
     #ryujinx #installs a bunch of crap so don't bother use nix-ld
   ];
 
