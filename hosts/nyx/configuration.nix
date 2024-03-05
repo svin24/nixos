@@ -7,6 +7,7 @@
       ../../modules/kde.nix
       #../../modules/gnome.nix
       #../../modules/office.nix
+      ../../modules/podman.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
       #../../modules/java.nix
@@ -107,6 +108,8 @@
     isNormalUser = true;
     description = "John Iliopoulos";
     extraGroups = [ "networkmanager" "wheel" "video" "audio" "input" "libvirtd" ];
+    subUidRanges = [{ startUid = 100000; count = 65536; }]; 
+    subGidRanges = [{ startGid = 100000; count = 65536; }];
     packages = with pkgs; [
     ];
   };
