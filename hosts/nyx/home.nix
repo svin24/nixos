@@ -72,7 +72,7 @@
     vim = "nvim";
     nixt = "sudo nixos-rebuild test --flake $HOME/nixos/";
     nixs = "sudo nixos-rebuild switch --flake $HOME/nixos/";
-    nixf = "nix flakes update $HOME/nixos";
+    nixf = "nix flake update $HOME/nixos";
   };
 
   programs.bash.sessionVariables= {
