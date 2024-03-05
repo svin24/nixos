@@ -3,25 +3,27 @@
   environment.systemPackages = with pkgs; [
     # General
     fastfetch
-    neovim
-    gitFull 
     wget
+    ffmpeg
+    yt-dlp
+    psmisc
+    htop
+    direnv
+    toybox
+
+    #Graphical
     qbittorrent
+    krita
     backintime
     firefox
     brave
-    direnv
     vscode-fhs
     haruna
-    ffmpeg
-    yt-dlp
-    krita
-    psmisc
-    # programming
+
+    # programming #MORE LIKE LEARN HOW TO USE COOL SHIT LIKE FLAKES
     zig
-    rustup
-    cargo
     go
     gopls
+
   ];
 }

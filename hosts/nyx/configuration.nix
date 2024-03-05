@@ -58,6 +58,18 @@
     xkb.options = "grp:alt_shift_toggle";
   };
 
+  # sanity
+  services.xserver.excludePackages = with pkgs; [
+    xterm
+  ];
+  programs.nano.enable = false;
+  
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    viAlias = true;
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
   sound.enable = true;
@@ -107,12 +119,13 @@
   };
 
   environment.shellAliases = {
-  	vim = "nvim";
+  	#vim = "nvim";
   };
 
   environment.sessionVariables = {
     EDITOR = "nvim";
   };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
