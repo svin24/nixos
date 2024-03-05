@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../modules/kde.nix
+      #../../modules/gnome.nix
       #../../modules/office.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
@@ -159,15 +160,6 @@
   # AUTO CLEANUP
   nix.optimise.automatic = true;
   nix.optimise.dates = [ "weekly" ];
-
-  #GPG
-  #programs.gnupg.agent = {
-  #enable = true;
-  #enableSSHSupport = true;
-  #pinentryFlavor="qt";
-  #};
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
