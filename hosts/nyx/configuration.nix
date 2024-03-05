@@ -163,6 +163,7 @@
   programs.gnupg.agent = {
   enable = true;
   enableSSHSupport = true;
+  pinentryFlavor="qt";
   };
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
