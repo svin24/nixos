@@ -10,28 +10,30 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:#@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      #x360
+      # HP-x360
       nixosConfigurations = {
-        x360 = nixpkgs.lib.nixosSystem {
-          #specialArgs = {inherit inputs;};
-          inherit system;
-          modules = [ ./hosts/x360/configuration.nix ];
+        nyx = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/nyx/configuration.nix
+            inputs.home-manager.nixosModules.default
+           ];
         };
       };
 
       # home manager
-      homeConfigurations = {
-        john = home-manager.lib.homeManagerConfiguration{
-          inherit pkgs;
-          modules = [ ./john/home.nix ];
-        };
-      };
+      #homeConfigurations = {
+      #  john = home-manager.lib.homeManagerConfiguration{
+      #    inherit pkgs;
+      #    modules = [ ./john/home.nix ];
+      #  };
+      #};
       
       # add other devices here
     };

@@ -74,7 +74,7 @@
   programs.bash.enable = true;
   programs.bash.shellAliases = {
     ll = "ls -l";
-    ".." = "cd ..";
+    vim = "nvim"
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

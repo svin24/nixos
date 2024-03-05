@@ -1,5 +1,5 @@
 #{ config, pkgs, inputs, ... }:
-{ config, pkgs, ... }:
+{ config, pkgs, inputs ,... }:
 
 {
   imports =
@@ -11,8 +11,9 @@
       ../../modules/syspkg.nix
       ../../modules/java.nix
       ../../modules/games.nix
+      ../../modules/virt-manager.nix
       #../../modules/virtualbox.nix
-      #inputs.home-manager.nixosModules.default
+      inputs.home-manager.nixosModules.default
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -99,12 +100,12 @@
   };
 
   # Home manager
-  #home-manager = {
-  # extraSpecialArgs = {inherit inputs;};
-  # users = {
-  #    "john" = import ./home.nix;
-  # };
-  #};
+  home-manager = {
+   extraSpecialArgs = {inherit inputs;};
+   users = {
+      "john" = import ./home.nix;
+   };
+  };
 
   #environment.systemPackages = [
   #  pkgs.home-manager
