@@ -11,7 +11,7 @@
       ../../modules/syspkg.nix
       ../../modules/java.nix
       ../../modules/games.nix
-      ../../modules/virtualbox.nix
+      #../../modules/virtualbox.nix
       #inputs.home-manager.nixosModules.default
     ];
 
@@ -93,7 +93,7 @@
   users.users.john = {
     isNormalUser = true;
     description = "John Iliopoulos";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" "input"];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" "input" "libvirtd" ];
     packages = with pkgs; [
     ];
   };
