@@ -10,7 +10,8 @@
     htop
     direnv
     toybox
-
+    gnupg
+    
     #Graphical
     qbittorrent
     krita
