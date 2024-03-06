@@ -18,13 +18,14 @@
     backintime
     firefox
     brave
-    vscode-fhs
+    #vscode-fhs
     haruna
+    codium
 
     # programming #MORE LIKE LEARN HOW TO USE COOL SHIT LIKE FLAKES
-    zig
-    go
-    gopls
+    #zig
+    #go
+    #gopls
 
   ];
 }
