@@ -20,7 +20,7 @@
     brave
     #vscode-fhs
     haruna
-    codium
+    vscodium
 
     # programming #MORE LIKE LEARN HOW TO USE COOL SHIT LIKE FLAKES
     #zig
