@@ -8,6 +8,7 @@
       #../../modules/gnome.nix
       #../../modules/office.nix
       ../../modules/podman.nix
+      ../../modules/waydroid.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
       #../../modules/java.nix
