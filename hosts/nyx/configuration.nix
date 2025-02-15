@@ -8,12 +8,12 @@
       #../../modules/gnome.nix
       #../../modules/office.nix
       #../../modules/podman.nix
-      ../../modules/waydroid.nix
+      #../../modules/waydroid.nix
       ../../modules/nix-ld.nix
       ../../modules/syspkg.nix
       #../../modules/java.nix
       ../../modules/games.nix
-      ../../modules/virt-manager.nix
+      #../../modules/virt-manager.nix
       #../../modules/virtualbox.nix
       inputs.home-manager.nixosModules.default
     ];
@@ -171,6 +171,7 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  system.stateVersion = "unstable"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
+
 
 }
