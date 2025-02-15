@@ -70,10 +70,14 @@
   programs.bash.shellAliases = {
     ll = "ls -l";
     vim = "nvim";
-    nixt = "sudo nixos-rebuild test --flake $HOME/nixos/";
-    nixs = "sudo nixos-rebuild switch --flake $HOME/nixos/";
-    nixf = "nix flake update $HOME/nixos";
+    #    nixt = "sudo nixos-rebuild test --flake $HOME/nixos/";
+    #    nixs = "sudo nixos-rebuild switch --flake $HOME/nixos/";
+    #    nixf = "nix flake update $HOME/nixos";
   };
+
+  programs.bash.profileExtra = ''
+      eval "$(ssh-agent -s)"
+      ssh-add ~/.ssh/id_git '';
 
   programs.bash.sessionVariables= {
     GOPATH = "$HOME/.go";

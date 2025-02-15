@@ -18,7 +18,8 @@
     backintime
     brave
     haruna
-    
+    nextcloud-client
+
     # programming #MORE LIKE LEARN HOW TO USE COOL SHIT LIKE FLAKES
     #zig
     #go
