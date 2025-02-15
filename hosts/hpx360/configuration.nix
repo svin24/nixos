@@ -65,13 +65,13 @@
   services.xserver.excludePackages = with pkgs; [
     xterm
   ];
-  programs.nano.enable = false;
+  programs.nano.enable = true;
   
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    viAlias = true;
-  };
+  # programs.neovim = {
+  #   enable = true;
+  #   vimAlias = true;
+  #   viAlias = true;
+  # };
 
   # SERVICES
   services.printing.enable = true;
