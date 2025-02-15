@@ -23,7 +23,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.device="nodev";
-  networking.hostName = "nyx";
+  networking.hostName = "holox360";
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   zramSwap.enable = true;
 

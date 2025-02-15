@@ -18,10 +18,10 @@
     {
       # HP-x360
       nixosConfigurations = {
-        nyx = nixpkgs.lib.nixosSystem {
+        hpx360 = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/nyx/configuration.nix
+            ./hosts/hpx360/configuration.nix
             inputs.home-manager.nixosModules.default
            ];
         };

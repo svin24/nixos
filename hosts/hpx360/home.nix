@@ -62,8 +62,8 @@
   programs.git = {
     package = pkgs.gitAndTools.gitFull;
     enable = true;
-    userName = "SViN24";
-    userEmail = "svin@dismail.de";
+    userName = "svin24";
+    userEmail = "svin.mail.24@gmail.com";
   };
 
   programs.bash.enable = true;

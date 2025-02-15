@@ -16,13 +16,10 @@
     qbittorrent
     krita
     backintime
-    firefox
     brave
-    #vscode-fhs
     haruna
-    vscodium
     rnix-lsp
-
+    
     # programming #MORE LIKE LEARN HOW TO USE COOL SHIT LIKE FLAKES
     #zig
     #go
