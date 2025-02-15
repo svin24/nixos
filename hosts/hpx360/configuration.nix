@@ -73,14 +73,9 @@
     viAlias = true;
   };
 
-  # Enable CUPS to print documents.
+  # SERVICES
   services.printing.enable = true;
-  sound.enable = true;
-  
-  # PULSE AUDIO
-  hardware.pulseaudio = {
-    enable = false;
-  };
+  services.pulseaudio.enable = false;
   
   # BLUETOOTH
   hardware.bluetooth = {
